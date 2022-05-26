@@ -59,6 +59,7 @@
   margin-bottom: 15px;
   display: block;
   width: 100%;
+  background-color: rgba(230, 106, 147, 1);
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -70,7 +71,12 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  margin-right: 4px;
+  margin-right: 9px;
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #669ec0;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 5px;
@@ -144,7 +150,7 @@
   }
 }
 
-.tourist-areas__wrapper-big {
+.tourist-areas__wrapper-3--big {
   @media (min-width: $tablet-width) {
     padding-left: 45px;
   }
@@ -155,8 +161,12 @@
   }
 }
 
-.toursit-areas__wrapper--3 {
-  padding-left: 7px;
+.tourist-areas__wrapper-3--3 {
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 7px;
+  }
 }
 
 .tourist-areas__wrapper {
